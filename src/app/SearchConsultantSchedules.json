@@ -1,0 +1,1194 @@
+{
+  "data": {
+    "searchConsultantSchedules": [
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:22",
+          "email": null,
+          "firstName": "Bryn",
+          "lastName": "Ho",
+          "jobTitle": "Marketing Specialist",
+          "employmentType": "CONTRACTOR",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "demo-task-1",
+            "project": {
+              "id": "proj-1",
+              "name": "Website Redesign",
+              "client": {
+                "id": "client-1",
+                "name": "Acme Corp",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-03",
+            "endDate": "2025-04-07",
+            "workingHoursPerDay": 8,
+            "ratePerHour": 75,
+            "isBillable": true,
+            "isHard": false,
+            "mode": "REMOTE",
+            "analytics": { "billableHours": 40, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          },
+          {
+            "id": "demo-task-2",
+            "project": {
+              "id": "proj-2",
+              "name": "SEO Campaign",
+              "client": {
+                "id": "client-2",
+                "name": "Beta LLC",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-10",
+            "endDate": "2025-04-12",
+            "workingHoursPerDay": 6,
+            "ratePerHour": 60,
+            "isBillable": false,
+            "isHard": false,
+            "mode": "ONSITE",
+            "analytics": { "billableHours": 18, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:16",
+          "email": null,
+          "firstName": "Calum",
+          "lastName": "Mcgee",
+          "jobTitle": "Marketing Specialist",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "demo-task-3",
+            "project": {
+              "id": "proj-3",
+              "name": "Product Launch",
+              "client": {
+                "id": "client-3",
+                "name": "Gamma Inc",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-05",
+            "endDate": "2025-04-09",
+            "workingHoursPerDay": 7,
+            "ratePerHour": 80,
+            "isBillable": true,
+            "isHard": true,
+            "mode": "REMOTE",
+            "analytics": { "billableHours": 35, "__typename": "AssignmentAnalytics" },
+            "__typename": "Type2"
+          },
+          {
+            "id": "demo-task-4",
+            "project": {
+              "id": "proj-4",
+              "name": "Brand Strategy",
+              "client": {
+                "id": "client-4",
+                "name": "Delta Ltd",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-15",
+            "endDate": "2025-04-18",
+            "workingHoursPerDay": 5,
+            "ratePerHour": 90,
+            "isBillable": true,
+            "isHard": false,
+            "mode": "ONSITE",
+            "analytics": { "billableHours": 20, "__typename": "AssignmentAnalytics" },
+            "__typename": "Type1"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Chat Notifications",
+          "email": null,
+          "firstName": "Chat Notifications",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "demo-task-5",
+            "project": {
+              "id": "proj-5",
+              "name": "Internal Tools",
+              "client": {
+                "id": "client-5",
+                "name": "Internal",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-08",
+            "endDate": "2025-04-11",
+            "workingHoursPerDay": 5,
+            "ratePerHour": 0,
+            "isBillable": false,
+            "isHard": false,
+            "mode": "ONSITE",
+            "analytics": { "billableHours": 15, "__typename": "AssignmentAnalytics" },
+            "__typename": "Type3"
+          },
+          {
+            "id": "demo-task-6",
+            "project": {
+              "id": "proj-6",
+              "name": "Support Rotation",
+              "client": {
+                "id": "client-6",
+                "name": "Internal",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-20",
+            "endDate": "2025-04-22",
+            "workingHoursPerDay": 4,
+            "ratePerHour": 0,
+            "isBillable": false,
+            "isHard": false,
+            "mode": "REMOTE",
+            "analytics": { "billableHours": 12, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:25",
+          "email": null,
+          "firstName": "Elsie",
+          "lastName": "Mccormick",
+          "jobTitle": "Account manager",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Gancho Stoykov",
+          "email": null,
+          "firstName": "Gancho Stoykov",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:10",
+          "email": null,
+          "firstName": "Ivan",
+          "lastName": "Ivanov",
+          "jobTitle": "QA engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:4",
+          "email": null,
+          "firstName": "Ivan",
+          "lastName": "Ivanov",
+          "jobTitle": "Software engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:2",
+          "email": null,
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "jobTitle": "Project manager",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "59116068-3c17-4f1a-94c6-4afc24146524",
+          "email": null,
+          "firstName": "Jensen",
+          "lastName": "Torr",
+          "jobTitle": "Business Analyst",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Jira Outlook",
+          "email": null,
+          "firstName": "Jira Outlook",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Jira Service Management Widget",
+          "email": null,
+          "firstName": "Jira Service Management Widget",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Jira Spreadsheets",
+          "email": null,
+          "firstName": "Jira Spreadsheets",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:1",
+          "email": null,
+          "firstName": "John",
+          "lastName": "Doe",
+          "jobTitle": "Senior software engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "d2abd358-9263-4fd9-88ef-a55939d28e61",
+            "project": {
+              "id": "36dc04fd-5bc0-417b-b6d1-85c5b4e7f767",
+              "name": "AI Shop",
+              "client": {
+                "id": "86906150-2b10-4c70-9964-4a196f5d393e",
+                "name": "Master 2",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-30",
+            "endDate": "2025-07-02",
+            "workingHoursPerDay": 8,
+            "ratePerHour": 1,
+            "isBillable": false,
+            "isHard": false,
+            "mode": "REMOTE",
+            "analytics": { "billableHours": 368, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "0418739f-1c7e-4bb5-8809-8c2479c06d85",
+          "email": null,
+          "firstName": "John",
+          "lastName": "Grey",
+          "jobTitle": "Business Analyst",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "abf93c62-be27-4d05-b25f-21b9d21c0602",
+          "email": null,
+          "firstName": "John",
+          "lastName": "Terrano",
+          "jobTitle": "Senior Cybersecurity Specialist",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "58e2c66f-58c1-43fc-9aa9-55bf819fee2b",
+            "project": {
+              "id": "3b14ffdb-8506-4377-a04b-75476f3a648d",
+              "name": "DevOps for ML",
+              "client": {
+                "id": "5bf2fdd9-2efa-479a-abbf-8e317c1318ec",
+                "name": "Wiser",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-06-02",
+            "endDate": "2025-06-30",
+            "workingHoursPerDay": 8,
+            "ratePerHour": 100,
+            "isBillable": null,
+            "isHard": null,
+            "mode": "HYBRID",
+            "analytics": { "billableHours": 168, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:12",
+          "email": null,
+          "firstName": "Kalin",
+          "lastName": "Kalinov",
+          "jobTitle": "QA engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "dcef479d-fbbd-4eb5-98cf-e69abca4ef1e",
+            "project": {
+              "id": "36dc04fd-5bc0-417b-b6d1-85c5b4e7f767",
+              "name": "AI Shop",
+              "client": {
+                "id": "86906150-2b10-4c70-9964-4a196f5d393e",
+                "name": "Master 2",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-06-16",
+            "endDate": "2025-10-17",
+            "workingHoursPerDay": 8,
+            "ratePerHour": 0,
+            "isBillable": true,
+            "isHard": false,
+            "mode": "ONSITE",
+            "analytics": { "billableHours": 720, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:6",
+          "email": null,
+          "firstName": "Kalin",
+          "lastName": "Kalinov",
+          "jobTitle": "Software engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:MF",
+          "email": null,
+          "firstName": "MF",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:19",
+          "email": null,
+          "firstName": "Malakai",
+          "lastName": "Mosley",
+          "jobTitle": "Marketing Specialist",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:14",
+          "email": null,
+          "firstName": "Maria",
+          "lastName": "Marinova",
+          "jobTitle": "QA engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:8",
+          "email": null,
+          "firstName": "Maria",
+          "lastName": "Marinova",
+          "jobTitle": "Software engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:3",
+          "email": null,
+          "firstName": "Marry",
+          "lastName": "Jane",
+          "jobTitle": "Client success manager",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Microsoft Teams for Confluence Cloud",
+          "email": null,
+          "firstName": "Microsoft Teams for Confluence Cloud",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Microsoft Teams for Jira Cloud",
+          "email": null,
+          "firstName": "Microsoft Teams for Jira Cloud",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:13",
+          "email": null,
+          "firstName": "Miroslav",
+          "lastName": "Miroslavov",
+          "jobTitle": "QA engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:7",
+          "email": null,
+          "firstName": "Miroslav",
+          "lastName": "Miroslavov",
+          "jobTitle": "Software engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Mohammad",
+          "email": null,
+          "firstName": "Mohammad",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "f40f26f7-15b6-4712-93ac-7a7c9fcdb9da",
+          "email": null,
+          "firstName": "Mohnn",
+          "lastName": "Strauus",
+          "jobTitle": "Network Admin",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "b86e1d55-b247-438d-b032-428782375eb5",
+          "email": null,
+          "firstName": "Mohnny",
+          "lastName": "Soberstrum",
+          "jobTitle": "Senior Cybersecurity Specialist",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Mourad karoudi",
+          "email": null,
+          "firstName": "Mourad karoudi",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Opsgenie Incident Timeline",
+          "email": null,
+          "firstName": "Opsgenie Incident Timeline",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:24",
+          "email": null,
+          "firstName": "Peggy",
+          "lastName": "Park",
+          "jobTitle": "Account manager",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "a237f499-6813-4047-bca4-29a7ee4d7bf1",
+            "project": {
+              "id": "36dc04fd-5bc0-417b-b6d1-85c5b4e7f767",
+              "name": "AI Shop",
+              "client": {
+                "id": "86906150-2b10-4c70-9964-4a196f5d393e",
+                "name": "Master 2",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-05-01",
+            "endDate": "2025-10-05",
+            "workingHoursPerDay": 10,
+            "ratePerHour": 100,
+            "isBillable": true,
+            "isHard": true,
+            "mode": "OTHER",
+            "analytics": { "billableHours": 1120, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:petargadjev",
+          "email": null,
+          "firstName": "Petar",
+          "lastName": "Gadjev",
+          "jobTitle": "Solutions Architect",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "9479e1d6-397c-4558-8b29-4a4b34ba23da",
+          "email": null,
+          "firstName": "Petar",
+          "lastName": "Gadzhev",
+          "jobTitle": "Solutions Architect",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "219334b2-2c93-4cf6-b5bf-177db0adccc3",
+            "project": {
+              "id": "36dc04fd-5bc0-417b-b6d1-85c5b4e7f767",
+              "name": "AI Shop",
+              "client": {
+                "id": "86906150-2b10-4c70-9964-4a196f5d393e",
+                "name": "Master 2",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-05-30",
+            "endDate": "2025-07-01",
+            "workingHoursPerDay": 8,
+            "ratePerHour": 100,
+            "isBillable": true,
+            "isHard": false,
+            "mode": "HYBRID",
+            "analytics": { "billableHours": 184, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:11",
+          "email": null,
+          "firstName": "Petar",
+          "lastName": "Petrov",
+          "jobTitle": "QA engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:5",
+          "email": null,
+          "firstName": "Petar",
+          "lastName": "Petrov",
+          "jobTitle": "Software engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "075e8b49-ac0a-4c79-aabc-743db4e858ca",
+          "email": "pesho@prediktai.com",
+          "firstName": "Peter",
+          "lastName": "Wendsy",
+          "jobTitle": "Developer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "peter-task-1",
+            "project": {
+              "id": "proj-7",
+              "name": "API Refactor",
+              "client": {
+                "id": "client-7",
+                "name": "TechFlow",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-04",
+            "endDate": "2025-04-08",
+            "workingHoursPerDay": 8,
+            "ratePerHour": 100,
+            "isBillable": true,
+            "isHard": false,
+            "mode": "REMOTE",
+            "analytics": { "billableHours": 40, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "986c995a-736e-4e01-bb49-f7342ac3885d",
+          "email": "dane@prediktai.com",
+          "firstName": "Dane",
+          "lastName": "Walsch",
+          "jobTitle": "Project Manager",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "dane-task-1",
+            "project": {
+              "id": "proj-8",
+              "name": "Client Onboarding",
+              "client": {
+                "id": "client-8",
+                "name": "Onboardly",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-12",
+            "endDate": "2025-04-15",
+            "workingHoursPerDay": 7,
+            "ratePerHour": 90,
+            "isBillable": true,
+            "isHard": true,
+            "mode": "ONSITE",
+            "analytics": { "billableHours": 28, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "a0d4fd25-bf59-4aa0-bf85-f5e60fe3790b",
+          "email": "derrik.may@prediktai.com",
+          "firstName": "Derrik",
+          "lastName": "May",
+          "jobTitle": "Senior Software Engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "derrik-task-1",
+            "project": {
+              "id": "proj-9",
+              "name": "Infrastructure Upgrade",
+              "client": {
+                "id": "client-9",
+                "name": "InfraPlus",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-18",
+            "endDate": "2025-04-22",
+            "workingHoursPerDay": 8,
+            "ratePerHour": 110,
+            "isBillable": true,
+            "isHard": false,
+            "mode": "REMOTE",
+            "analytics": { "billableHours": 40, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Proforma Migrator",
+          "email": null,
+          "firstName": "Proforma Migrator",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Slack",
+          "email": null,
+          "firstName": "Slack",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Statuspage for Jira",
+          "email": null,
+          "firstName": "Statuspage for Jira",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "1ae99e35-766b-48b5-8901-e0b3eb3772ea",
+          "email": null,
+          "firstName": "Steffan",
+          "lastName": "Goodum",
+          "jobTitle": "Senior Cybersecurity Specialist",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:System",
+          "email": null,
+          "firstName": "System",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:20",
+          "email": null,
+          "firstName": "Tanya",
+          "lastName": "Leon",
+          "jobTitle": "Marketing Specialist",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Tempo Base plugin",
+          "email": null,
+          "firstName": "Tempo Base plugin",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Tempo Timesheets",
+          "email": null,
+          "firstName": "Tempo Timesheets",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Timesheet Reports and Gadgets for JIRA Cloud",
+          "email": null,
+          "firstName": "Timesheet Reports and Gadgets for JIRA Cloud",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Timesheet tracking for Jira",
+          "email": null,
+          "firstName": "Timesheet tracking for Jira",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:21",
+          "email": null,
+          "firstName": "Tori",
+          "lastName": "Mahoney",
+          "jobTitle": "Marketing Specialist",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Trello",
+          "email": null,
+          "firstName": "Trello",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:UAT Ninja - User Acceptance Test Management for Jira",
+          "email": null,
+          "firstName": "UAT Ninja - User Acceptance Test Management for Jira",
+          "lastName": "",
+          "jobTitle": "Unknown",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "9b6845d7-bed9-465a-9470-b0cd6c93f7c4",
+          "email": null,
+          "firstName": "Venelin",
+          "lastName": "Genadiev",
+          "jobTitle": "Account manager",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "a246bbfd-646a-4d82-9429-3a1f1140e302",
+            "project": {
+              "id": "36dc04fd-5bc0-417b-b6d1-85c5b4e7f767",
+              "name": "AI Shop",
+              "client": {
+                "id": "86906150-2b10-4c70-9964-4a196f5d393e",
+                "name": "Master 2",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-05-02",
+            "endDate": "2025-12-08",
+            "workingHoursPerDay": 8,
+            "ratePerHour": 100,
+            "isBillable": true,
+            "isHard": true,
+            "mode": "OTHER",
+            "analytics": { "billableHours": 1256, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "44d2f244-ea6f-4b58-b30c-6a479888362f",
+          "email": null,
+          "firstName": "Venelin",
+          "lastName": "Genadiev",
+          "jobTitle": "Business Analyst",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "acbb6064-bc7a-4fb5-a30c-138676cb4708",
+            "project": {
+              "id": "36dc04fd-5bc0-417b-b6d1-85c5b4e7f767",
+              "name": "AI Shop",
+              "client": {
+                "id": "86906150-2b10-4c70-9964-4a196f5d393e",
+                "name": "Master 2",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-04-07",
+            "endDate": "2025-07-05",
+            "workingHoursPerDay": 8,
+            "ratePerHour": 0,
+            "isBillable": true,
+            "isHard": false,
+            "mode": "OTHER",
+            "analytics": { "billableHours": 520, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Venelin Genadiev",
+          "email": null,
+          "firstName": "Venelin",
+          "lastName": "Genadiev",
+          "jobTitle": "Senior Frontend Engineer",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "ee3c3986-717b-4b8d-aead-64a5b4cc0587",
+          "email": null,
+          "firstName": "Venelin",
+          "lastName": "fsdfsd",
+          "jobTitle": "Client success manager",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [
+          {
+            "id": "3fcc5db0-0d48-4dac-8be1-a3cd25374895",
+            "project": {
+              "id": "36dc04fd-5bc0-417b-b6d1-85c5b4e7f767",
+              "name": "AI Shop",
+              "client": {
+                "id": "86906150-2b10-4c70-9964-4a196f5d393e",
+                "name": "Master 2",
+                "__typename": "Client"
+              },
+              "__typename": "Project"
+            },
+            "startDate": "2025-03-31",
+            "endDate": "2025-07-12",
+            "workingHoursPerDay": 8,
+            "ratePerHour": 123,
+            "isBillable": true,
+            "isHard": false,
+            "mode": "OTHER",
+            "analytics": { "billableHours": 600, "__typename": "AssignmentAnalytics" },
+            "__typename": "Assignment"
+          }
+        ],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:23",
+          "email": null,
+          "firstName": "Wayne",
+          "lastName": "Abbott",
+          "jobTitle": "Marketing Specialist",
+          "employmentType": "EMPLOYEE",
+          "__typename": "Consultant"
+        },
+        "assignments": [],
+        "absences": [],
+        "__typename": "ConsultantSchedule"
+      }
+    ]
+  },
+  "loading": false,
+  "networkStatus": 7
+}

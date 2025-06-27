@@ -1,0 +1,1372 @@
+{
+  "data": {
+    "searchConsultantAnalytics": [
+      {
+        "consultant": {
+          "id": "075e8b49-ac0a-4c79-aabc-743db4e858ca",
+          "firstName": "Peter",
+          "lastName": "Wendsy",
+          "email": "pesho@prediktai.com",
+          "jobTitle": "Developer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": 80,
+        "plannedHours": 100,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "986c995a-736e-4e01-bb49-f7342ac3885d",
+          "firstName": "Dane",
+          "lastName": "Walsch",
+          "email": "dane@prediktai.com",
+          "jobTitle": "Project Manager",
+          "__typename": "Consultant"
+        },
+        "loggedHours": 100,
+        "plannedHours": 100,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "a0d4fd25-bf59-4aa0-bf85-f5e60fe3790b",
+          "firstName": "Derrik",
+          "lastName": "May",
+          "email": "derrik.may@prediktai.com",
+          "jobTitle": "Senior Software Engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": 120,
+        "plannedHours": 100,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "59116068-3c17-4f1a-94c6-4afc24146524",
+          "firstName": "Jensen",
+          "lastName": "Torr",
+          "email": "jensen@prediktai.com",
+          "jobTitle": "Business Analyst",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:MF",
+          "firstName": "MF",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Slack",
+          "firstName": "Slack",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:System",
+          "firstName": "System",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "9479e1d6-397c-4558-8b29-4a4b34ba23da",
+          "firstName": "Petar",
+          "lastName": "Gadzhev",
+          "email": "petar.gadzhev@prediktai.com",
+          "jobTitle": "Solutions Architect",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:1",
+          "firstName": "John",
+          "lastName": "Doe",
+          "email": null,
+          "jobTitle": "Senior software engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:2",
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "email": null,
+          "jobTitle": "Project manager",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:5",
+          "firstName": "Petar",
+          "lastName": "Petrov",
+          "email": null,
+          "jobTitle": "Software engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:6",
+          "firstName": "Kalin",
+          "lastName": "Kalinov",
+          "email": null,
+          "jobTitle": "Software engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:12",
+          "firstName": "Kalin",
+          "lastName": "Kalinov",
+          "email": null,
+          "jobTitle": "QA engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Trello",
+          "firstName": "Trello",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Mohammad",
+          "firstName": "Mohammad",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Jira Outlook",
+          "firstName": "Jira Outlook",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Demo Reporter",
+          "firstName": "Demo Reporter",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Gancho Stoykov",
+          "firstName": "Gancho Stoykov",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Mourad karoudi",
+          "firstName": "Mourad karoudi",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Tempo Timesheets",
+          "firstName": "Tempo Timesheets",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Jira Spreadsheets",
+          "firstName": "Jira Spreadsheets",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Proforma Migrator",
+          "firstName": "Proforma Migrator",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:4",
+          "firstName": "Ivan",
+          "lastName": "Ivanov",
+          "email": null,
+          "jobTitle": "Software engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:8",
+          "firstName": "Maria",
+          "lastName": "Marinova",
+          "email": null,
+          "jobTitle": "Software engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:9",
+          "firstName": "Dimitar",
+          "lastName": "Dimitrov",
+          "email": null,
+          "jobTitle": "Software engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:10",
+          "firstName": "Ivan",
+          "lastName": "Ivanov",
+          "email": null,
+          "jobTitle": "QA engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:11",
+          "firstName": "Petar",
+          "lastName": "Petrov",
+          "email": null,
+          "jobTitle": "QA engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:13",
+          "firstName": "Miroslav",
+          "lastName": "Miroslavov",
+          "email": null,
+          "jobTitle": "QA engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:14",
+          "firstName": "Maria",
+          "lastName": "Marinova",
+          "email": null,
+          "jobTitle": "QA engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:15",
+          "firstName": "Dimitar",
+          "lastName": "Dimitrov",
+          "email": null,
+          "jobTitle": "QA engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Tempo Base plugin",
+          "firstName": "Tempo Base plugin",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Chat Notifications",
+          "firstName": "Chat Notifications",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": 15,
+        "plannedHours": 30,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Statuspage for Jira",
+          "firstName": "Statuspage for Jira",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Opsgenie Incident Timeline",
+          "firstName": "Opsgenie Incident Timeline",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Timesheet tracking for Jira",
+          "firstName": "Timesheet tracking for Jira",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Confluence Analytics (System)",
+          "firstName": "Confluence Analytics (System)",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Jira Service Management Widget",
+          "firstName": "Jira Service Management Widget",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Microsoft Teams for Jira Cloud",
+          "firstName": "Microsoft Teams for Jira Cloud",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:7",
+          "firstName": "Miroslav",
+          "lastName": "Miroslavov",
+          "email": null,
+          "jobTitle": "Software engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Microsoft Teams for Confluence Cloud",
+          "firstName": "Microsoft Teams for Confluence Cloud",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Timesheet Reports and Gadgets for JIRA Cloud",
+          "firstName": "Timesheet Reports and Gadgets for JIRA Cloud",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:UAT Ninja - User Acceptance Test Management for Jira",
+          "firstName": "UAT Ninja - User Acceptance Test Management for Jira",
+          "lastName": "",
+          "email": null,
+          "jobTitle": "Unknown",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:petargadjev",
+          "firstName": "Petar",
+          "lastName": "Gadjev",
+          "email": "petar.gadjev@gmail.com",
+          "jobTitle": "Solutions Architect",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:3",
+          "firstName": "Marry",
+          "lastName": "Jane",
+          "email": null,
+          "jobTitle": "Client success manager",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:16",
+          "firstName": "Calum",
+          "lastName": "Mcgee",
+          "email": null,
+          "jobTitle": "Marketing Specialist",
+          "__typename": "Consultant"
+        },
+        "loggedHours": 35,
+        "plannedHours": 70,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:17",
+          "firstName": "Constance",
+          "lastName": "Stanton",
+          "email": null,
+          "jobTitle": "Project manager",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:19",
+          "firstName": "Malakai",
+          "lastName": "Mosley",
+          "email": null,
+          "jobTitle": "Marketing Specialist",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:20",
+          "firstName": "Tanya",
+          "lastName": "Leon",
+          "email": null,
+          "jobTitle": "Marketing Specialist",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000456:Venelin Genadiev",
+          "firstName": "Venelin",
+          "lastName": "Genadiev",
+          "email": "venelin.genadiev@prediktai.com",
+          "jobTitle": "Senior Frontend Engineer",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:22",
+          "firstName": "Bryn",
+          "lastName": "Ho",
+          "email": null,
+          "jobTitle": "Marketing Specialist",
+          "__typename": "Consultant"
+        },
+        "loggedHours": 40,
+        "plannedHours": 80,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:21",
+          "firstName": "Tori",
+          "lastName": "Mahoney",
+          "email": null,
+          "jobTitle": "Marketing Specialist",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:23",
+          "firstName": "Wayne",
+          "lastName": "Abbott",
+          "email": null,
+          "jobTitle": "Marketing Specialist",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:24",
+          "firstName": "Peggy",
+          "lastName": "Park",
+          "email": null,
+          "jobTitle": "Account manager",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 100,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "5ba924c4-484a-4a60-94ae-908c8d3fc162:00000450:25",
+          "firstName": "Elsie",
+          "lastName": "Mccormick",
+          "email": null,
+          "jobTitle": "Account manager",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "ee3c3986-717b-4b8d-aead-64a5b4cc0587",
+          "firstName": "Venelin",
+          "lastName": "fsdfsd",
+          "email": "vgenadiev@gmail.com",
+          "jobTitle": "Client success manager",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "44d2f244-ea6f-4b58-b30c-6a479888362f",
+          "firstName": "Venelin",
+          "lastName": "Genadiev",
+          "email": "venelin.genadiev-test2@prediktai.com",
+          "jobTitle": "Business Analyst",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "9b6845d7-bed9-465a-9470-b0cd6c93f7c4",
+          "firstName": "Venelin",
+          "lastName": "Genadiev",
+          "email": "venelin.genadiev-test2@prediktai.com",
+          "jobTitle": "Account manager",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 100,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "0418739f-1c7e-4bb5-8809-8c2479c06d85",
+          "firstName": "John",
+          "lastName": "Grey",
+          "email": "john.grey@prediktai.com",
+          "jobTitle": "Business Analyst",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "abf93c62-be27-4d05-b25f-21b9d21c0602",
+          "firstName": "John",
+          "lastName": "Terrano",
+          "email": "jterrano@prediktai.com",
+          "jobTitle": "Senior Cybersecurity Specialist",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "1ae99e35-766b-48b5-8901-e0b3eb3772ea",
+          "firstName": "Steffan",
+          "lastName": "Goodum",
+          "email": "sgoodum@prediktai.com",
+          "jobTitle": "Senior Cybersecurity Specialist",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "b86e1d55-b247-438d-b032-428782375eb5",
+          "firstName": "Mohnny",
+          "lastName": "Soberstrum",
+          "email": "soberstrum@prediktai.com",
+          "jobTitle": "Senior Cybersecurity Specialist",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      },
+      {
+        "consultant": {
+          "id": "f40f26f7-15b6-4712-93ac-7a7c9fcdb9da",
+          "firstName": "Mohnn",
+          "lastName": "Strauus",
+          "email": "strauss@prediktai.com",
+          "jobTitle": "Network Admin",
+          "__typename": "Consultant"
+        },
+        "loggedHours": null,
+        "plannedHours": null,
+        "cost": null,
+        "revenue": null,
+        "margin": null,
+        "utilization": 0,
+        "riskLevels": {
+          "margin": "HIGH",
+          "utilization": "HIGH",
+          "__typename": "ConsultantRiskLevels"
+        },
+        "__typename": "ConsultantAnalytics"
+      }
+    ]
+  },
+  "loading": false,
+  "networkStatus": 7
+}
