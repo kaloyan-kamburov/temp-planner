@@ -433,27 +433,36 @@ export default function Planner() {
                     alignItems="center"
                     justifyContent="center"
                     sx={{
+                      position: "relative",
                       border: `1px solid ${colors.border}`,
                       borderLeft: 0,
                       borderTop: 0,
                       flex: 1,
                       height: "60px",
-                      background: day.isHoliday
-                        ? "#cae4ff"
-                        : day.name === "Sat" || day.name === "Sun"
-                        ? "#f0f0f0"
-                        : "transparent",
+                      background:
+                        day.name === "Sat" || day.name === "Sun"
+                          ? "#f0f0f0"
+                          : "transparent",
                     }}
                   >
                     <Text fontSize="18px" fontWeight={500}>
-                      {i + 1}
+                      {day.date.slice(-2)}
                     </Text>
                     <Text fontSize="12px" sx={{ color: colors.gray }}>
                       {day.name}
                     </Text>
-                    <Text fontSize="10px" sx={{ color: colors.gray }}>
-                      {day.date.slice(-2)}
-                    </Text>
+                    {day.isHoliday && (
+                      <Box
+                        sx={{
+                          position: "absolute",
+                          left: 0,
+                          bottom: 0,
+                          width: "100%",
+                          height: "3px",
+                          background: "#195CE5",
+                        }}
+                      />
+                    )}
                   </Flex>
                 ))}
               </Flex>
@@ -472,7 +481,7 @@ export default function Planner() {
               >
                 {/* Weekend Background Columns */}
                 {dayNames.map((day, i) =>
-                  day.name === "Sat" || day.name === "Sun" || day.isHoliday ? (
+                  day.name === "Sat" || day.name === "Sun" ? (
                     <Box
                       key={`weekend-bg-${i}`}
                       sx={{
