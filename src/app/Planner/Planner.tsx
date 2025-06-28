@@ -438,10 +438,11 @@ export default function Planner() {
                       borderTop: 0,
                       flex: 1,
                       height: "60px",
-                      background:
-                        day.name === "Sat" || day.name === "Sun" || day.isHoliday
-                          ? "#f0f0f0"
-                          : "transparent",
+                      background: day.isHoliday
+                        ? "#cae4ff"
+                        : day.name === "Sat" || day.name === "Sun"
+                        ? "#f0f0f0"
+                        : "transparent",
                     }}
                   >
                     <Text fontSize="18px" fontWeight={500}>
