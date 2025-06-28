@@ -57,6 +57,7 @@ export default function Planner() {
             type: a.isBillable ? "b2b" : "support",
             memberId: sched.consultant.id,
             mode: a.mode,
+            workingHoursPerDay: a.workingHoursPerDay,
           };
           return { ...baseTask, ...(taskOverrides[a.id] || {}) };
         })
@@ -80,10 +81,17 @@ export default function Planner() {
   const [resizingTask, setResizingTask] = useState<string | null>(null);
   const [resizePreview, setResizePreview] = useState<{
     taskId: string;
-    newEndDate: number;
+    newStartDate?: number;
+    newEndDate?: number;
+    resizeSide: "left" | "right";
   } | null>(null);
   const [isResizing, setIsResizing] = useState(false);
-  const resizeStateRef = useRef<{ taskId: string; newEndDate: number } | null>(null);
+  const resizeStateRef = useRef<{
+    taskId: string;
+    newStartDate?: number;
+    newEndDate?: number;
+    resizeSide: "left" | "right";
+  } | null>(null);
 
   const days = Array.from({ length: dayNames.length }, (_, i) => i + 1);
 
@@ -187,13 +195,18 @@ export default function Planner() {
   };
 
   // resize handlers
-  const handleResizeStart = (e: React.MouseEvent, taskId: string) => {
+  const handleResizeStart = (
+    e: React.MouseEvent,
+    taskId: string,
+    resizeSide: "left" | "right"
+  ) => {
     e.stopPropagation();
     e.preventDefault();
     setResizingTask(taskId);
     setIsResizing(true);
     const initialTask = tasks.find((t) => t.id === taskId);
     if (!initialTask) return;
+
     const handleMouseMove = (moveEvent: MouseEvent) => {
       if (!gridRef.current) return;
       const task = tasks.find((t) => t.id === taskId);
@@ -203,19 +216,29 @@ export default function Planner() {
       const dayWidth = gridRect.width / days.length;
       const relativeX = moveEvent.clientX - gridRect.left;
       const dayIndex = Math.floor(relativeX / dayWidth);
-      const newEndDate = Math.max(task.startIdx, Math.min(days.length - 1, dayIndex));
-      const newResizeState = { taskId, newEndDate };
+
+      let newResizeState;
+      if (resizeSide === "right") {
+        const newEndDate = Math.max(task.startIdx, Math.min(days.length - 1, dayIndex));
+        newResizeState = { taskId, newEndDate, resizeSide };
+      } else {
+        const newStartDate = Math.max(0, Math.min(task.endIdx - 1, dayIndex));
+        newResizeState = { taskId, newStartDate, resizeSide };
+      }
+
       setResizePreview(newResizeState);
       resizeStateRef.current = newResizeState;
     };
+
     const handleMouseUp = () => {
       if (resizeStateRef.current && resizeStateRef.current.taskId === taskId) {
-        const { taskId: resizeTaskId, newEndDate } = resizeStateRef.current;
+        const { taskId: resizeTaskId, newStartDate, newEndDate } = resizeStateRef.current;
         setTaskOverrides((prev) => ({
           ...prev,
           [resizeTaskId]: {
             ...(prev[resizeTaskId] || {}),
-            endIdx: newEndDate,
+            ...(newStartDate !== undefined && { startIdx: newStartDate }),
+            ...(newEndDate !== undefined && { endIdx: newEndDate }),
           },
         }));
       }
@@ -413,9 +436,12 @@ export default function Planner() {
                       border: `1px solid ${colors.border}`,
                       borderLeft: 0,
                       borderTop: 0,
-
                       flex: 1,
                       height: "60px",
+                      background:
+                        day.name === "Sat" || day.name === "Sun" || day.isHoliday
+                          ? "#f0f0f0"
+                          : "transparent",
                     }}
                   >
                     <Text fontSize="18px" fontWeight={500}>
@@ -443,21 +469,69 @@ export default function Planner() {
                 onDragLeave={handleDragLeave}
                 onDrop={handleDrop}
               >
+                {/* Weekend Background Columns */}
+                {dayNames.map((day, i) =>
+                  day.name === "Sat" || day.name === "Sun" || day.isHoliday ? (
+                    <Box
+                      key={`weekend-bg-${i}`}
+                      sx={{
+                        position: "absolute",
+                        left: `${(i * 100) / dayNames.length}%`,
+                        top: 0,
+                        bottom: 0,
+                        width: `${100 / dayNames.length}%`,
+                        background: "#f9f9f9",
+                        zIndex: 1,
+                      }}
+                    />
+                  ) : null
+                )}
                 {/* Grid Lines */}
-                {Array.from({ length: dayNames.length }).map((_, i) => (
+                {Array.from({ length: dayNames.length }).map((_, i) =>
+                  i === 0 ? null : (
+                    <Box
+                      key={i}
+                      sx={{
+                        position: "absolute",
+                        left: `${(i * 100) / dayNames.length}%`,
+                        top: 0,
+                        bottom: 0,
+                        width: "1px",
+                        background: colors.border,
+                        zIndex: 2,
+                      }}
+                    />
+                  )
+                )}
+                {/* Current time indicator */}
+                <Box
+                  sx={{
+                    position: "absolute",
+                    left: "45%",
+                    top: 0,
+                    bottom: 0,
+                    width: "1px",
+                    background: "red",
+                    zIndex: 2,
+                  }}
+                >
                   <Box
-                    key={i}
                     sx={{
                       position: "absolute",
-                      left: `${(i * 100) / dayNames.length}%`,
                       top: 0,
-                      bottom: 0,
-                      width: "1px",
-                      background: colors.border,
-                      zIndex: 2,
+                      left: "50%",
+                      transform: "translateX(-50%)",
+                      fontSize: "10px",
+                      background: "red",
+                      borderRadius: "10px",
+                      padding: "4px 7px",
+                      color: "#fff",
+                      fontFamily: "DM Sans",
                     }}
-                  />
-                ))}
+                  >
+                    13:00
+                  </Box>
+                </Box>
                 {/* Member Rows */}
                 {peopleData.map((member, memberIndex) => (
                   <Box
@@ -564,6 +638,7 @@ export default function Planner() {
                         );
                       })}
                       {memberTasks.map((task) => {
+                        const workingHoursPerDay = task.workingHoursPerDay;
                         const duration = task.endIdx - task.startIdx + 1;
                         const width = `${(duration * 100) / dayNames.length}%`;
                         const left = `${(task.startIdx * 100) / dayNames.length}%`;
@@ -571,11 +646,33 @@ export default function Planner() {
                         const isDragging = draggedTask === task.id;
                         const isTaskResizing = resizingTask === task.id;
                         let previewWidth = width;
+                        let previewLeft = left;
+
                         if (resizePreview && resizePreview.taskId === task.id) {
-                          const previewDuration =
-                            resizePreview.newEndDate - task.startIdx + 1;
-                          previewWidth = `${(previewDuration * 100) / dayNames.length}%`;
+                          if (
+                            resizePreview.resizeSide === "right" &&
+                            resizePreview.newEndDate !== undefined
+                          ) {
+                            const previewDuration =
+                              resizePreview.newEndDate - task.startIdx + 1;
+                            previewWidth = `${
+                              (previewDuration * 100) / dayNames.length
+                            }%`;
+                          } else if (
+                            resizePreview.resizeSide === "left" &&
+                            resizePreview.newStartDate !== undefined
+                          ) {
+                            const previewDuration =
+                              task.endIdx - resizePreview.newStartDate + 1;
+                            previewWidth = `${
+                              (previewDuration * 100) / dayNames.length
+                            }%`;
+                            previewLeft = `${
+                              (resizePreview.newStartDate * 100) / dayNames.length
+                            }%`;
+                          }
                         }
+
                         const taskStyle = tasksStyes[task.mode] || tasksStyes.default;
                         const startDate = dayNames[task.startIdx]?.date;
                         const endDate = dayNames[task.endIdx]?.date;
@@ -609,7 +706,10 @@ export default function Planner() {
                               onDragEnd={handleDragEnd}
                               sx={{
                                 position: "absolute",
-                                left,
+                                left:
+                                  isTaskResizing && resizePreview?.taskId === task.id
+                                    ? previewLeft
+                                    : left,
                                 width:
                                   isTaskResizing && resizePreview?.taskId === task.id
                                     ? previewWidth
@@ -632,6 +732,7 @@ export default function Planner() {
                                   : "grab",
                                 pointerEvents: isResizing ? "none" : "auto",
                                 transition: "box-shadow 0.2s",
+                                padding: "0 14px",
                               }}
                             >
                               <Text
@@ -650,9 +751,46 @@ export default function Planner() {
                                 {`(${formattedStart} - ${formattedEnd})`}
                               </Text>
                               <Text fontSize="10px" color="rgba(116, 116, 116, 1);">
-                                {`(${duration} days)`}
+                                {workingHoursPerDay} hours a day
                               </Text>
                               {/* Resize Handle */}
+                              <Box
+                                sx={{
+                                  position: "absolute",
+                                  left: 0,
+                                  top: 0,
+                                  bottom: 0,
+                                  width: "12px",
+                                  cursor: "e-resize",
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                  zIndex: 15,
+                                  _hover: { background: "rgba(255,255,255,0.2)" },
+                                }}
+                                onMouseDown={(e) => handleResizeStart(e, task.id, "left")}
+                                onClick={(e) => e.stopPropagation()}
+                              >
+                                <Box
+                                  sx={{
+                                    width: "2px",
+                                    height: "16px",
+                                    background: "white",
+                                    borderRadius: "2px",
+                                    opacity: 0.7,
+                                    mr: "2px",
+                                  }}
+                                />
+                                <Box
+                                  sx={{
+                                    width: "2px",
+                                    height: "16px",
+                                    background: "white",
+                                    borderRadius: "2px",
+                                    opacity: 0.7,
+                                  }}
+                                />
+                              </Box>
                               <Box
                                 sx={{
                                   position: "absolute",
@@ -667,7 +805,9 @@ export default function Planner() {
                                   zIndex: 15,
                                   _hover: { background: "rgba(255,255,255,0.2)" },
                                 }}
-                                onMouseDown={(e) => handleResizeStart(e, task.id)}
+                                onMouseDown={(e) =>
+                                  handleResizeStart(e, task.id, "right")
+                                }
                                 onClick={(e) => e.stopPropagation()}
                               >
                                 <Box
@@ -706,12 +846,42 @@ export default function Planner() {
                     const memberIndex = peopleData.findIndex(
                       (m) => m.consultant.id === task.memberId
                     );
-                    const previewDuration = resizePreview.newEndDate - task.startIdx + 1;
-                    const previewWidth = `${(previewDuration * 100) / dayNames.length}%`;
-                    const left = `${(task.startIdx * 100) / dayNames.length}%`;
+                    const workingHoursPerDay = task.workingHoursPerDay;
+                    let previewWidth, previewLeft;
+
+                    if (
+                      resizePreview.resizeSide === "right" &&
+                      resizePreview.newEndDate !== undefined
+                    ) {
+                      const previewDuration =
+                        resizePreview.newEndDate - task.startIdx + 1;
+                      previewWidth = `${(previewDuration * 100) / dayNames.length}%`;
+                      previewLeft = `${(task.startIdx * 100) / dayNames.length}%`;
+                    } else if (
+                      resizePreview.resizeSide === "left" &&
+                      resizePreview.newStartDate !== undefined
+                    ) {
+                      const previewDuration =
+                        task.endIdx - resizePreview.newStartDate + 1;
+                      previewWidth = `${(previewDuration * 100) / dayNames.length}%`;
+                      previewLeft = `${
+                        (resizePreview.newStartDate * 100) / dayNames.length
+                      }%`;
+                    } else {
+                      return null;
+                    }
+
                     const taskStyle = tasksStyes[task.mode] || tasksStyes.default;
-                    const startDate = dayNames[task.startIdx]?.date;
-                    const endDate = dayNames[resizePreview.newEndDate]?.date;
+                    const startDate =
+                      resizePreview.resizeSide === "left" &&
+                      resizePreview.newStartDate !== undefined
+                        ? dayNames[resizePreview.newStartDate]?.date
+                        : dayNames[task.startIdx]?.date;
+                    const endDate =
+                      resizePreview.resizeSide === "right" &&
+                      resizePreview.newEndDate !== undefined
+                        ? dayNames[resizePreview.newEndDate]?.date
+                        : dayNames[task.endIdx]?.date;
                     const formattedStart = startDate
                       ? dayjs(startDate).format("DD-MM-YYYY")
                       : "";
@@ -724,7 +894,7 @@ export default function Planner() {
                         justifyContent="center"
                         sx={{
                           position: "absolute",
-                          left,
+                          left: previewLeft,
                           width: previewWidth,
                           top: `${memberIndex * 65}px`,
                           height: "65px",
@@ -736,6 +906,7 @@ export default function Planner() {
                           whiteSpace: "nowrap",
                           zIndex: 30,
                           pointerEvents: "none",
+                          padding: "0 14px",
                         }}
                       >
                         <Text fontSize="10px" fontWeight={800}>
@@ -745,7 +916,7 @@ export default function Planner() {
                           {`(${formattedStart} - ${formattedEnd})`}
                         </Text>
                         <Text fontSize="10px" color="rgba(116, 116, 116, 1);">
-                          {`(${previewDuration} days)`}
+                          {workingHoursPerDay} hours a day
                         </Text>
                       </Flex>
                     );
@@ -760,6 +931,7 @@ export default function Planner() {
                       (m) => m.consultant.id === hoverDay.memberId
                     );
                     if (memberIndex === -1) return null;
+                    const workingHoursPerDay = task.workingHoursPerDay;
                     const duration = task.endIdx - task.startIdx + 1;
                     const width = `${(duration * 100) / dayNames.length}%`;
                     const left = `${((hoverDay.day - 1) * 100) / dayNames.length}%`;
@@ -800,7 +972,7 @@ export default function Planner() {
                           {`(${formattedStart} - ${formattedEnd})`}
                         </Text>
                         <Text fontSize="10px" color="rgba(116, 116, 116, 1);">
-                          {`(${duration} days)`}
+                          {workingHoursPerDay} hours a day
                         </Text>
                       </Flex>
                     );
